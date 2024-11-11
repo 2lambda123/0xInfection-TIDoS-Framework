@@ -139,8 +139,8 @@ def subdom0x00(web):
         webb = web.split("@")[1]
     try:
         fileo = 'tmp/'+webb+'-subdomains.lst'
-        p = open(fileo,'w+')
-        p.close
+        with open(fileo,'w+') as p:
+            p.close
         print(R+'\n    S U B D O M A I N   G A T H E R E R')
         print(R+'   ---<>----<>----<>----<>----<>----<>--\n')
         time.sleep(0.7)
